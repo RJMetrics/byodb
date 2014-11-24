@@ -12,7 +12,7 @@ Using any language you want, construct your own simple database that exposes the
  - `DELETE /tables` - Empties all tables
  - `GET    /search?q=:query` - Returns all keys that match the regular expression `:query`
 
-Note:  Don't just wrap an interface around mysql, we want you to build your own data storage and retrieval system
+Note:  Don't just wrap an interface around mysql. We want you to build your own data storage and retrieval system.
 
 Some things to think about:
  - How are you going to store the data? Which use cases are you optimizing for?
