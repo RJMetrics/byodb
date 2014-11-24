@@ -1,7 +1,7 @@
 # byodb
 *challenge for engineering candidates: build a simple database*
 
-Using any language you want, build a simple database that exposes the following HTTP REST interface:
+Using any language you want, construct your own simple database that exposes the following HTTP REST interface:
  - `GET    /tables` - List tables
  - `GET    /tables/:table` - Retrieve the entire contents of `:table`
  - `GET    /tables/:table/:key` - Retrieve the contents of `:key` in `:table`
@@ -12,7 +12,10 @@ Using any language you want, build a simple database that exposes the following 
  - `DELETE /tables` - Empties all tables
  - `GET    /search?q=:query` - Returns all keys that match the regular expression `:query`
 
+Note:  Don't just wrap an interface around mysql, we want you to build your own data storage and retrieval system
+
 Some things to think about:
+ - How are you going to store the data? Which use cases are you optimizing for?
  - What is going to happen to the data when the service is restarted?  What about a crash?
  - How efficient is each of these operations?  Can you make them more efficient?
  - What are the proper HTTP status codes to return in the header of your responses?
